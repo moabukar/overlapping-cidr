@@ -17,7 +17,7 @@ resource "aws_subnet" "vpc_b_primary_subnet" {
 }
 
 resource "aws_subnet" "vpc_b_secondary_subnet" {
-  vpc_id                  = aws_vpc.vpc_b.id
-  cidr_block              = cidrsubnet(var.vpc_b_secondary_cidr, 4, 1)
-  availability_zone       = var.availability_zone_b
+  vpc_id            = aws_vpc.vpc_b.id
+  cidr_block        = cidrsubnet(var.vpc_b_secondary_cidr, 4, 1)
+  availability_zone = var.availability_zone_b
 }
