@@ -20,10 +20,10 @@ variable "vpc_b_secondary_cidr" {
 
 variable "availability_zone_a" {
   description = "Availability Zone for VPC A resources"
-  default     = "us-east-1a"
+  default     = "eu-west-2a"
 }
 
 variable "availability_zone_b" {
   description = "Availability Zone for VPC B resources"
-  default     = "us-east-1b"
+  default     = "eu-west-2b"
 }
